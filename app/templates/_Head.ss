@@ -9,10 +9,10 @@
 
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-    <link href="$ThemeDir/styles/main.css" rel="stylesheet">
+    <link href="$ThemeDir/styles/custom.css" rel="stylesheet">
 
-    <script src="$ThemeDir/scripts/jquery.min.js"></script>
-    <script src="$ThemeDir/scripts/main.min.js" async></script>
+    <script src="$ThemeDir/js/dependencies.min.js"></script>
+    <script src="$ThemeDir/js/custom.min.js" async></script>
 
     <% include GoogleAnalytics %>
 </head>
