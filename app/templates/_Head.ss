@@ -14,5 +14,4 @@
     <script src="$ThemeDir/js/dependencies.min.js"></script>
     <script src="$ThemeDir/js/custom.min.js" async></script>
 
-    <% include GoogleAnalytics %>
 </head>
