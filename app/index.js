@@ -45,7 +45,7 @@ module.exports = yeoman.generators.Base.extend({
       type: 'input',
       name: 'projectName',
       message: 'Enter project name',
-      default: 'my-project'
+      default: 'custom'
     }, {
       type: 'input',
       name: 'projectVersion',
@@ -55,7 +55,7 @@ module.exports = yeoman.generators.Base.extend({
       type: 'input',
       name: 'yourEmail',
       message: 'Enter your email',
-      default: 'dev@gpmd.co.uk'
+      default: 'mark@dazeysolutions.com'
     }, {
       type: 'input',
       name: 'silverstripeVersion',
@@ -70,7 +70,7 @@ module.exports = yeoman.generators.Base.extend({
       type: 'input',
       name: 'silverstripeDbName',
       message: 'Enter SilverStripe Database Name',
-      default: 'my-project'
+      default: 'ss-db'
     }, {
       type: 'input',
       name: 'silverstripeDbUsername',
