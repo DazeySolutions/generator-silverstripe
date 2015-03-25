@@ -70,17 +70,17 @@ module.exports = yeoman.generators.Base.extend({
       type: 'input',
       name: 'silverstripeDbName',
       message: 'Enter SilverStripe Database Name',
-      default: 'ss-db'
+      default: 'ss_db'
     }, {
       type: 'input',
       name: 'silverstripeDbUsername',
       message: 'Enter SilverStripe Database Username',
-      default: 'root'
+      default: 'ss_user'
     }, {
       type: 'input',
       name: 'silverstripeDbPassword',
       message: 'Enter SilverStripe Database Password',
-      default: ''
+      default: 'p@s$w0rd'
     }];
 
     this.log(chalk.green('Tell me a bit about your project...'));
@@ -138,8 +138,6 @@ module.exports = yeoman.generators.Base.extend({
     // Silverstripe theme files
     this.copy('_Page.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Page.ss');
     this.copy('_PageLayout.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Layout/Page.ss');
-    this.copy('_BreadCrumbs.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Includes/BreadCrumbs.ss');
-    this.copy('_BrowseHappy.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Includes/BrowseHappy.ss');
     this.copy('_Footer.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Includes/Footer.ss');
     this.copy('_GoogleAnalytics.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Includes/GoogleAnalytics.ss');
     this.copy('_Head.ss', this.srcThemeDir + srcThemeTemplatesDir + 'Includes/Head.ss');
@@ -261,7 +259,7 @@ module.exports = yeoman.generators.Base.extend({
             '--exclude-from',
             tempDir + 'itcss-boilerplate-excludes.txt',
             tempItcssBoilerplateDir,
-            this.srcThemeDir + 'src/styles/'
+            this.srcThemeDir + 'src/scss/'
           ],
           msg: 'Moving required itcss-boilerplate files...'
         });
@@ -271,7 +269,7 @@ module.exports = yeoman.generators.Base.extend({
           cmd: 'cp',
           args: [
             tempDir + 'editor.scss',
-            this.srcThemeDir + 'src/styles/editor.scss'
+            this.srcThemeDir + 'src/scss/editor.scss'
           ],
           msg: 'Moving SilverStripe editor.scss...'
         });
